@@ -1,0 +1,28 @@
+.Body {
+height: 600px;
+background-color: purple
+}
+
+.Header {
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.Footer {
+    position: fixed;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: green;
+}
+
+p, h1 {
+    text-align: center;
+}
+
+.Menu {
+    color: black;
+    margin: 50px;
+    display: inline;
+}
+    
