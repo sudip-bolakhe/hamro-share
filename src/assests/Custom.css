@@ -19,10 +19,75 @@ background-color: purple
 p, h1 {
     text-align: center;
 }
+/* Sidebar.css */
 
-.Menu {
-    color: black;
-    margin: 50px;
-    display: inline;
+/* Base styles for the sidebar */
+.sidebar {
+    width: 60px;
+    background-color: #333;
+    color: white;
+    transition: width 0.3s;
+    overflow: hidden;
+    /* Hide overflowing sub-menu */
+}
+
+.sidebar.expanded {
+    width: 200px;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 10px;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Styles for the main menu */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styles for the sub-menu */
+.submenu-trigger {
+    cursor: pointer;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    /* Initially hide sub-menu */
+}
+
+.submenu.expanded {
+    display: block;
+}
+
+.submenu li {
+    padding: 8px 15px;
+    background-color: #444;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
 }
     
